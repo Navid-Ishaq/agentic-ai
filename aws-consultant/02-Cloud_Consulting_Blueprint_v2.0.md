@@ -1,8 +1,3 @@
-from pathlib import Path
-import pypandoc
-
-md_text = r"""# 🚀 Cloud Consulting Blueprint v1.0
-
 ## Vision
 
 Build a premium **Cloud Consulting Company** that helps **Small & Medium Businesses (SMEs)** modernize their IT infrastructure, reduce operational costs, improve security, automate business processes, and prepare for AI adoption.
@@ -295,9 +290,4 @@ Each project will include:
 14. Lessons Learned
 
 These 50 projects will become the operating manual of the consulting company.
-"""
 
-out = Path("/mnt/data/Cloud_Consulting_Blueprint_v1.0.md")
-pypandoc.convert_text(md_text, "md", format="md", outputfile=str(out), extra_args=["--standalone"])
-
-print(str(out))
